@@ -1,0 +1,2 @@
+"""Feature handlers (dummy)."""
+ROUTES = {}
