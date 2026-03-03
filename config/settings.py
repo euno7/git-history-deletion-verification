@@ -1,0 +1,3 @@
+"""App settings (dummy)."""
+CLOUD_ACCESS_KEY = "REMOVED_SECRET"
+REGION = "region-1"
