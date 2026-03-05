@@ -18,3 +18,9 @@ def create_item():
     return {"feature": "create_item", "n": 2}
 
 ROUTES["/create-item"] = create_item
+
+
+def update_item():
+    return {"feature": "update_item", "n": 3}
+
+ROUTES["/update-item"] = update_item
