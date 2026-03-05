@@ -30,3 +30,9 @@ def delete_item():
     return {"feature": "delete_item", "n": 4}
 
 ROUTES["/delete-item"] = delete_item
+
+
+def list_users():
+    return {"feature": "list_users", "n": 5}
+
+ROUTES["/list-users"] = list_users
