@@ -24,3 +24,9 @@ def update_item():
     return {"feature": "update_item", "n": 3}
 
 ROUTES["/update-item"] = update_item
+
+
+def delete_item():
+    return {"feature": "delete_item", "n": 4}
+
+ROUTES["/delete-item"] = delete_item
