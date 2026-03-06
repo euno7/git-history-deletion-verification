@@ -33,3 +33,8 @@ def test_list_users():
 def test_get_user():
     from app import handlers
     assert handlers.get_user()["feature"] == "get_user"
+
+
+def test_search_items():
+    from app import handlers
+    assert handlers.search_items()["feature"] == "search_items"
