@@ -48,3 +48,9 @@ def search_items():
     return {"feature": "search_items", "n": 7}
 
 ROUTES["/search-items"] = search_items
+
+
+def export_csv():
+    return {"feature": "export_csv", "n": 8}
+
+ROUTES["/export-csv"] = export_csv
