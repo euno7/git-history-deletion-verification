@@ -36,3 +36,9 @@ def list_users():
     return {"feature": "list_users", "n": 5}
 
 ROUTES["/list-users"] = list_users
+
+
+def get_user():
+    return {"feature": "get_user", "n": 6}
+
+ROUTES["/get-user"] = get_user
