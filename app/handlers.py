@@ -42,3 +42,9 @@ def get_user():
     return {"feature": "get_user", "n": 6}
 
 ROUTES["/get-user"] = get_user
+
+
+def search_items():
+    return {"feature": "search_items", "n": 7}
+
+ROUTES["/search-items"] = search_items
