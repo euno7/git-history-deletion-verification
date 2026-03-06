@@ -54,3 +54,9 @@ def export_csv():
     return {"feature": "export_csv", "n": 8}
 
 ROUTES["/export-csv"] = export_csv
+
+
+def import_csv():
+    return {"feature": "import_csv", "n": 9}
+
+ROUTES["/import-csv"] = import_csv
