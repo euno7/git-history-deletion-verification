@@ -28,3 +28,8 @@ def test_delete_item():
 def test_list_users():
     from app import handlers
     assert handlers.list_users()["feature"] == "list_users"
+
+
+def test_get_user():
+    from app import handlers
+    assert handlers.get_user()["feature"] == "get_user"
