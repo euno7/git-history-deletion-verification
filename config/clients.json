@@ -1,0 +1,9 @@
+{
+  "clients": [
+    {
+      "name": "batch-worker",
+      "client_secret":
+        "rQ9xbkpzzcE7gP3C2wYEwlymntY7x8xrW5U6pSFH"
+    }
+  ]
+}
