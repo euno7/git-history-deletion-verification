@@ -1,0 +1,9 @@
+{
+  "clients": [
+    {
+      "name": "batch-worker",
+      "client_secret":
+        "REMOVED_SECRET"
+    }
+  ]
+}
