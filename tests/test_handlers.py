@@ -48,3 +48,8 @@ def test_export_csv():
 def test_import_csv():
     from app import handlers
     assert handlers.import_csv()["feature"] == "import_csv"
+
+
+def test_list_orders():
+    from app import handlers
+    assert handlers.list_orders()["feature"] == "list_orders"
