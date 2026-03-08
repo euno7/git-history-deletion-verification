@@ -66,3 +66,9 @@ def list_orders():
     return {"feature": "list_orders", "n": 10}
 
 ROUTES["/list-orders"] = list_orders
+
+
+def get_order():
+    return {"feature": "get_order", "n": 11}
+
+ROUTES["/get-order"] = get_order

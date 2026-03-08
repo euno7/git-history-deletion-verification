@@ -53,3 +53,8 @@ def test_import_csv():
 def test_list_orders():
     from app import handlers
     assert handlers.list_orders()["feature"] == "list_orders"
+
+
+def test_get_order():
+    from app import handlers
+    assert handlers.get_order()["feature"] == "get_order"
