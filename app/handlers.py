@@ -78,3 +78,9 @@ def cancel_order():
     return {"feature": "cancel_order", "n": 12}
 
 ROUTES["/cancel-order"] = cancel_order
+
+
+def list_tags():
+    return {"feature": "list_tags", "n": 13}
+
+ROUTES["/list-tags"] = list_tags
