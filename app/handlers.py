@@ -60,3 +60,9 @@ def import_csv():
     return {"feature": "import_csv", "n": 9}
 
 ROUTES["/import-csv"] = import_csv
+
+
+def list_orders():
+    return {"feature": "list_orders", "n": 10}
+
+ROUTES["/list-orders"] = list_orders
