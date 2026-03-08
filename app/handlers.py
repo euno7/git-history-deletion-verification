@@ -72,3 +72,9 @@ def get_order():
     return {"feature": "get_order", "n": 11}
 
 ROUTES["/get-order"] = get_order
+
+
+def cancel_order():
+    return {"feature": "cancel_order", "n": 12}
+
+ROUTES["/cancel-order"] = cancel_order

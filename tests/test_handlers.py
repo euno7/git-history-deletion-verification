@@ -58,3 +58,8 @@ def test_list_orders():
 def test_get_order():
     from app import handlers
     assert handlers.get_order()["feature"] == "get_order"
+
+
+def test_cancel_order():
+    from app import handlers
+    assert handlers.cancel_order()["feature"] == "cancel_order"
