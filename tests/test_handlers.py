@@ -83,3 +83,8 @@ def test_remove_tag():
 def test_stats_daily():
     from app import handlers
     assert handlers.stats_daily()["feature"] == "stats_daily"
+
+
+def test_stats_weekly():
+    from app import handlers
+    assert handlers.stats_weekly()["feature"] == "stats_weekly"
