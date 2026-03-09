@@ -84,3 +84,9 @@ def list_tags():
     return {"feature": "list_tags", "n": 13}
 
 ROUTES["/list-tags"] = list_tags
+
+
+def add_tag():
+    return {"feature": "add_tag", "n": 14}
+
+ROUTES["/add-tag"] = add_tag

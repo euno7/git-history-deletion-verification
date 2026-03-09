@@ -68,3 +68,8 @@ def test_cancel_order():
 def test_list_tags():
     from app import handlers
     assert handlers.list_tags()["feature"] == "list_tags"
+
+
+def test_add_tag():
+    from app import handlers
+    assert handlers.add_tag()["feature"] == "add_tag"
