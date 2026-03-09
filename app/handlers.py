@@ -96,3 +96,9 @@ def remove_tag():
     return {"feature": "remove_tag", "n": 15}
 
 ROUTES["/remove-tag"] = remove_tag
+
+
+def stats_daily():
+    return {"feature": "stats_daily", "n": 16}
+
+ROUTES["/stats-daily"] = stats_daily
