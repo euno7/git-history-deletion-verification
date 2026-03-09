@@ -90,3 +90,9 @@ def add_tag():
     return {"feature": "add_tag", "n": 14}
 
 ROUTES["/add-tag"] = add_tag
+
+
+def remove_tag():
+    return {"feature": "remove_tag", "n": 15}
+
+ROUTES["/remove-tag"] = remove_tag
