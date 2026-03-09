@@ -102,3 +102,9 @@ def stats_daily():
     return {"feature": "stats_daily", "n": 16}
 
 ROUTES["/stats-daily"] = stats_daily
+
+
+def stats_weekly():
+    return {"feature": "stats_weekly", "n": 17}
+
+ROUTES["/stats-weekly"] = stats_weekly
