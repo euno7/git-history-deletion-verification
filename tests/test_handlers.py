@@ -88,3 +88,8 @@ def test_stats_daily():
 def test_stats_weekly():
     from app import handlers
     assert handlers.stats_weekly()["feature"] == "stats_weekly"
+
+
+def test_audit_log():
+    from app import handlers
+    assert handlers.audit_log()["feature"] == "audit_log"

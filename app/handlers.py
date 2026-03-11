@@ -108,3 +108,9 @@ def stats_weekly():
     return {"feature": "stats_weekly", "n": 17}
 
 ROUTES["/stats-weekly"] = stats_weekly
+
+
+def audit_log():
+    return {"feature": "audit_log", "n": 18}
+
+ROUTES["/audit-log"] = audit_log
