@@ -114,3 +114,9 @@ def audit_log():
     return {"feature": "audit_log", "n": 18}
 
 ROUTES["/audit-log"] = audit_log
+
+
+def feature_flags():
+    return {"feature": "feature_flags", "n": 19}
+
+ROUTES["/feature-flags"] = feature_flags

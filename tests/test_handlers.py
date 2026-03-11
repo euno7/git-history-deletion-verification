@@ -93,3 +93,8 @@ def test_stats_weekly():
 def test_audit_log():
     from app import handlers
     assert handlers.audit_log()["feature"] == "audit_log"
+
+
+def test_feature_flags():
+    from app import handlers
+    assert handlers.feature_flags()["feature"] == "feature_flags"
