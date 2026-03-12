@@ -98,3 +98,8 @@ def test_audit_log():
 def test_feature_flags():
     from app import handlers
     assert handlers.feature_flags()["feature"] == "feature_flags"
+
+
+def test_list_projects():
+    from app import handlers
+    assert handlers.list_projects()["feature"] == "list_projects"
