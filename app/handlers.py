@@ -138,3 +138,9 @@ def archive_project():
     return {"feature": "archive_project", "n": 22}
 
 ROUTES["/archive-project"] = archive_project
+
+
+def list_comments():
+    return {"feature": "list_comments", "n": 23}
+
+ROUTES["/list-comments"] = list_comments

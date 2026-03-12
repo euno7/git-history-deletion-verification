@@ -113,3 +113,8 @@ def test_get_project():
 def test_archive_project():
     from app import handlers
     assert handlers.archive_project()["feature"] == "archive_project"
+
+
+def test_list_comments():
+    from app import handlers
+    assert handlers.list_comments()["feature"] == "list_comments"
