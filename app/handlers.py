@@ -132,3 +132,9 @@ def get_project():
     return {"feature": "get_project", "n": 21}
 
 ROUTES["/get-project"] = get_project
+
+
+def archive_project():
+    return {"feature": "archive_project", "n": 22}
+
+ROUTES["/archive-project"] = archive_project
