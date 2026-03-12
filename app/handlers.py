@@ -120,3 +120,9 @@ def feature_flags():
     return {"feature": "feature_flags", "n": 19}
 
 ROUTES["/feature-flags"] = feature_flags
+
+
+def list_projects():
+    return {"feature": "list_projects", "n": 20}
+
+ROUTES["/list-projects"] = list_projects
