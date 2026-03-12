@@ -126,3 +126,9 @@ def list_projects():
     return {"feature": "list_projects", "n": 20}
 
 ROUTES["/list-projects"] = list_projects
+
+
+def get_project():
+    return {"feature": "get_project", "n": 21}
+
+ROUTES["/get-project"] = get_project
