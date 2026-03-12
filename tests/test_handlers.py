@@ -103,3 +103,8 @@ def test_feature_flags():
 def test_list_projects():
     from app import handlers
     assert handlers.list_projects()["feature"] == "list_projects"
+
+
+def test_get_project():
+    from app import handlers
+    assert handlers.get_project()["feature"] == "get_project"
