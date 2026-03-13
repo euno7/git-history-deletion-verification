@@ -144,3 +144,9 @@ def list_comments():
     return {"feature": "list_comments", "n": 23}
 
 ROUTES["/list-comments"] = list_comments
+
+
+def add_comment():
+    return {"feature": "add_comment", "n": 24}
+
+ROUTES["/add-comment"] = add_comment

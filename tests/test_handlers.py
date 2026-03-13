@@ -118,3 +118,8 @@ def test_archive_project():
 def test_list_comments():
     from app import handlers
     assert handlers.list_comments()["feature"] == "list_comments"
+
+
+def test_add_comment():
+    from app import handlers
+    assert handlers.add_comment()["feature"] == "add_comment"
