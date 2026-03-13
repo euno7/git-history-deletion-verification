@@ -150,3 +150,9 @@ def add_comment():
     return {"feature": "add_comment", "n": 24}
 
 ROUTES["/add-comment"] = add_comment
+
+
+def notify_users():
+    return {"feature": "notify_users", "n": 25}
+
+ROUTES["/notify-users"] = notify_users
