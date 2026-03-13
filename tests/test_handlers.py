@@ -123,3 +123,8 @@ def test_list_comments():
 def test_add_comment():
     from app import handlers
     assert handlers.add_comment()["feature"] == "add_comment"
+
+
+def test_notify_users():
+    from app import handlers
+    assert handlers.notify_users()["feature"] == "notify_users"
