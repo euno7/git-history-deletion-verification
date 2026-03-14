@@ -128,3 +128,8 @@ def test_add_comment():
 def test_notify_users():
     from app import handlers
     assert handlers.notify_users()["feature"] == "notify_users"
+
+
+def test_list_webhooks():
+    from app import handlers
+    assert handlers.list_webhooks()["feature"] == "list_webhooks"
