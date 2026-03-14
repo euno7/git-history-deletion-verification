@@ -143,3 +143,8 @@ def test_rotate_tokens():
 def test_list_sessions():
     from app import handlers
     assert handlers.list_sessions()["feature"] == "list_sessions"
+
+
+def test_end_session():
+    from app import handlers
+    assert handlers.end_session()["feature"] == "end_session"
