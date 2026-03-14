@@ -174,3 +174,9 @@ def list_sessions():
     return {"feature": "list_sessions", "n": 28}
 
 ROUTES["/list-sessions"] = list_sessions
+
+
+def end_session():
+    return {"feature": "end_session", "n": 29}
+
+ROUTES["/end-session"] = end_session
