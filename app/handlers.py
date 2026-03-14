@@ -168,3 +168,9 @@ def rotate_tokens():
     return {"feature": "rotate_tokens", "n": 27}
 
 ROUTES["/rotate-tokens"] = rotate_tokens
+
+
+def list_sessions():
+    return {"feature": "list_sessions", "n": 28}
+
+ROUTES["/list-sessions"] = list_sessions
