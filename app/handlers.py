@@ -156,3 +156,9 @@ def notify_users():
     return {"feature": "notify_users", "n": 25}
 
 ROUTES["/notify-users"] = notify_users
+
+
+def list_webhooks():
+    return {"feature": "list_webhooks", "n": 26}
+
+ROUTES["/list-webhooks"] = list_webhooks
