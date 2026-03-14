@@ -180,3 +180,9 @@ def end_session():
     return {"feature": "end_session", "n": 29}
 
 ROUTES["/end-session"] = end_session
+
+
+def list_regions():
+    return {"feature": "list_regions", "n": 30}
+
+ROUTES["/list-regions"] = list_regions
