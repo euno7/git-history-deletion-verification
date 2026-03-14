@@ -133,3 +133,8 @@ def test_notify_users():
 def test_list_webhooks():
     from app import handlers
     assert handlers.list_webhooks()["feature"] == "list_webhooks"
+
+
+def test_rotate_tokens():
+    from app import handlers
+    assert handlers.rotate_tokens()["feature"] == "rotate_tokens"
