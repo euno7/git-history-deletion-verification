@@ -162,3 +162,9 @@ def list_webhooks():
     return {"feature": "list_webhooks", "n": 26}
 
 ROUTES["/list-webhooks"] = list_webhooks
+
+
+def rotate_tokens():
+    return {"feature": "rotate_tokens", "n": 27}
+
+ROUTES["/rotate-tokens"] = rotate_tokens
