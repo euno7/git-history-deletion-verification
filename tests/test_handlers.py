@@ -163,3 +163,8 @@ def test_get_region():
 def test_quota_usage():
     from app import handlers
     assert handlers.quota_usage()["feature"] == "quota_usage"
+
+
+def test_billing_preview():
+    from app import handlers
+    assert handlers.billing_preview()["feature"] == "billing_preview"

@@ -198,3 +198,9 @@ def quota_usage():
     return {"feature": "quota_usage", "n": 32}
 
 ROUTES["/quota-usage"] = quota_usage
+
+
+def billing_preview():
+    return {"feature": "billing_preview", "n": 33}
+
+ROUTES["/billing-preview"] = billing_preview
