@@ -204,3 +204,9 @@ def billing_preview():
     return {"feature": "billing_preview", "n": 33}
 
 ROUTES["/billing-preview"] = billing_preview
+
+
+def list_reports():
+    return {"feature": "list_reports", "n": 34}
+
+ROUTES["/list-reports"] = list_reports

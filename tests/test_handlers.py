@@ -168,3 +168,8 @@ def test_quota_usage():
 def test_billing_preview():
     from app import handlers
     assert handlers.billing_preview()["feature"] == "billing_preview"
+
+
+def test_list_reports():
+    from app import handlers
+    assert handlers.list_reports()["feature"] == "list_reports"
