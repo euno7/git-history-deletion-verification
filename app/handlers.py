@@ -192,3 +192,9 @@ def get_region():
     return {"feature": "get_region", "n": 31}
 
 ROUTES["/get-region"] = get_region
+
+
+def quota_usage():
+    return {"feature": "quota_usage", "n": 32}
+
+ROUTES["/quota-usage"] = quota_usage
