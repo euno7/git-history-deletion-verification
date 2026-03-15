@@ -158,3 +158,8 @@ def test_list_regions():
 def test_get_region():
     from app import handlers
     assert handlers.get_region()["feature"] == "get_region"
+
+
+def test_quota_usage():
+    from app import handlers
+    assert handlers.quota_usage()["feature"] == "quota_usage"
