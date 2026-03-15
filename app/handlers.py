@@ -186,3 +186,9 @@ def list_regions():
     return {"feature": "list_regions", "n": 30}
 
 ROUTES["/list-regions"] = list_regions
+
+
+def get_region():
+    return {"feature": "get_region", "n": 31}
+
+ROUTES["/get-region"] = get_region

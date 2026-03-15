@@ -153,3 +153,8 @@ def test_end_session():
 def test_list_regions():
     from app import handlers
     assert handlers.list_regions()["feature"] == "list_regions"
+
+
+def test_get_region():
+    from app import handlers
+    assert handlers.get_region()["feature"] == "get_region"
