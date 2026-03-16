@@ -178,3 +178,8 @@ def test_list_reports():
 def test_get_report():
     from app import handlers
     assert handlers.get_report()["feature"] == "get_report"
+
+
+def test_schedule_report():
+    from app import handlers
+    assert handlers.schedule_report()["feature"] == "schedule_report"
