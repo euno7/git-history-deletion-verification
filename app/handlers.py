@@ -210,3 +210,9 @@ def list_reports():
     return {"feature": "list_reports", "n": 34}
 
 ROUTES["/list-reports"] = list_reports
+
+
+def get_report():
+    return {"feature": "get_report", "n": 35}
+
+ROUTES["/get-report"] = get_report
