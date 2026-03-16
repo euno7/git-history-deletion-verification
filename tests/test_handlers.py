@@ -173,3 +173,8 @@ def test_billing_preview():
 def test_list_reports():
     from app import handlers
     assert handlers.list_reports()["feature"] == "list_reports"
+
+
+def test_get_report():
+    from app import handlers
+    assert handlers.get_report()["feature"] == "get_report"
