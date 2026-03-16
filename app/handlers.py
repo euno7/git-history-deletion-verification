@@ -228,3 +228,9 @@ def list_jobs():
     return {"feature": "list_jobs", "n": 37}
 
 ROUTES["/list-jobs"] = list_jobs
+
+
+def retry_job():
+    return {"feature": "retry_job", "n": 38}
+
+ROUTES["/retry-job"] = retry_job
