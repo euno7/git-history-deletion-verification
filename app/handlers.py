@@ -222,3 +222,9 @@ def schedule_report():
     return {"feature": "schedule_report", "n": 36}
 
 ROUTES["/schedule-report"] = schedule_report
+
+
+def list_jobs():
+    return {"feature": "list_jobs", "n": 37}
+
+ROUTES["/list-jobs"] = list_jobs

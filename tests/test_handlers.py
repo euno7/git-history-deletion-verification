@@ -183,3 +183,8 @@ def test_get_report():
 def test_schedule_report():
     from app import handlers
     assert handlers.schedule_report()["feature"] == "schedule_report"
+
+
+def test_list_jobs():
+    from app import handlers
+    assert handlers.list_jobs()["feature"] == "list_jobs"
