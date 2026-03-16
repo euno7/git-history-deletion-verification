@@ -188,3 +188,8 @@ def test_schedule_report():
 def test_list_jobs():
     from app import handlers
     assert handlers.list_jobs()["feature"] == "list_jobs"
+
+
+def test_retry_job():
+    from app import handlers
+    assert handlers.retry_job()["feature"] == "retry_job"
