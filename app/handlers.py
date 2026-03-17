@@ -234,3 +234,9 @@ def retry_job():
     return {"feature": "retry_job", "n": 38}
 
 ROUTES["/retry-job"] = retry_job
+
+
+def cancel_job():
+    return {"feature": "cancel_job", "n": 39}
+
+ROUTES["/cancel-job"] = cancel_job
