@@ -240,3 +240,9 @@ def cancel_job():
     return {"feature": "cancel_job", "n": 39}
 
 ROUTES["/cancel-job"] = cancel_job
+
+
+def list_items_v2():
+    return {"feature": "list_items_v2", "n": 40}
+
+ROUTES["/list-items-v2"] = list_items_v2

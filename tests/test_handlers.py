@@ -198,3 +198,8 @@ def test_retry_job():
 def test_cancel_job():
     from app import handlers
     assert handlers.cancel_job()["feature"] == "cancel_job"
+
+
+def test_list_items_v2():
+    from app import handlers
+    assert handlers.list_items_v2()["feature"] == "list_items_v2"
