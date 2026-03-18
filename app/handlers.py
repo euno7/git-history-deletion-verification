@@ -252,3 +252,9 @@ def get_item_v2():
     return {"feature": "get_item_v2", "n": 41}
 
 ROUTES["/get-item-v2"] = get_item_v2
+
+
+def create_item_v2():
+    return {"feature": "create_item_v2", "n": 42}
+
+ROUTES["/create-item-v2"] = create_item_v2
