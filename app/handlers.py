@@ -246,3 +246,9 @@ def list_items_v2():
     return {"feature": "list_items_v2", "n": 40}
 
 ROUTES["/list-items-v2"] = list_items_v2
+
+
+def get_item_v2():
+    return {"feature": "get_item_v2", "n": 41}
+
+ROUTES["/get-item-v2"] = get_item_v2
