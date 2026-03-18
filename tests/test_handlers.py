@@ -213,3 +213,8 @@ def test_get_item_v2():
 def test_create_item_v2():
     from app import handlers
     assert handlers.create_item_v2()["feature"] == "create_item_v2"
+
+
+def test_update_item_v2():
+    from app import handlers
+    assert handlers.update_item_v2()["feature"] == "update_item_v2"
