@@ -282,3 +282,9 @@ def get_user_v2():
     return {"feature": "get_user_v2", "n": 46}
 
 ROUTES["/get-user-v2"] = get_user_v2
+
+
+def search_items_v2():
+    return {"feature": "search_items_v2", "n": 47}
+
+ROUTES["/search-items-v2"] = search_items_v2
