@@ -1,5 +1,7 @@
 """Send notifications to a chat tool webhook (dummy)."""
-WEBHOOK_URL = "https://chat.example.invalid/hooks/REMOVED_SECRET"
+import os
+
+WEBHOOK_URL = os.environ.get("WEBHOOK_URL", "")
 
 
 def notify(text):

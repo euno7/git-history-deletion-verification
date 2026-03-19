@@ -108,3 +108,165 @@ def stats_weekly():
     return {"feature": "stats_weekly", "n": 17}
 
 ROUTES["/stats-weekly"] = stats_weekly
+
+
+def audit_log():
+    return {"feature": "audit_log", "n": 18}
+
+ROUTES["/audit-log"] = audit_log
+
+
+def feature_flags():
+    return {"feature": "feature_flags", "n": 19}
+
+ROUTES["/feature-flags"] = feature_flags
+
+
+def list_projects():
+    return {"feature": "list_projects", "n": 20}
+
+ROUTES["/list-projects"] = list_projects
+
+
+def get_project():
+    return {"feature": "get_project", "n": 21}
+
+ROUTES["/get-project"] = get_project
+
+
+def archive_project():
+    return {"feature": "archive_project", "n": 22}
+
+ROUTES["/archive-project"] = archive_project
+
+
+def list_comments():
+    return {"feature": "list_comments", "n": 23}
+
+ROUTES["/list-comments"] = list_comments
+
+
+def add_comment():
+    return {"feature": "add_comment", "n": 24}
+
+ROUTES["/add-comment"] = add_comment
+
+
+def notify_users():
+    return {"feature": "notify_users", "n": 25}
+
+ROUTES["/notify-users"] = notify_users
+
+
+def list_webhooks():
+    return {"feature": "list_webhooks", "n": 26}
+
+ROUTES["/list-webhooks"] = list_webhooks
+
+
+def rotate_tokens():
+    return {"feature": "rotate_tokens", "n": 27}
+
+ROUTES["/rotate-tokens"] = rotate_tokens
+
+
+def list_sessions():
+    return {"feature": "list_sessions", "n": 28}
+
+ROUTES["/list-sessions"] = list_sessions
+
+
+def end_session():
+    return {"feature": "end_session", "n": 29}
+
+ROUTES["/end-session"] = end_session
+
+
+def list_regions():
+    return {"feature": "list_regions", "n": 30}
+
+ROUTES["/list-regions"] = list_regions
+
+
+def get_region():
+    return {"feature": "get_region", "n": 31}
+
+ROUTES["/get-region"] = get_region
+
+
+def quota_usage():
+    return {"feature": "quota_usage", "n": 32}
+
+ROUTES["/quota-usage"] = quota_usage
+
+
+def billing_preview():
+    return {"feature": "billing_preview", "n": 33}
+
+ROUTES["/billing-preview"] = billing_preview
+
+
+def list_reports():
+    return {"feature": "list_reports", "n": 34}
+
+ROUTES["/list-reports"] = list_reports
+
+
+def get_report():
+    return {"feature": "get_report", "n": 35}
+
+ROUTES["/get-report"] = get_report
+
+
+def schedule_report():
+    return {"feature": "schedule_report", "n": 36}
+
+ROUTES["/schedule-report"] = schedule_report
+
+
+def list_jobs():
+    return {"feature": "list_jobs", "n": 37}
+
+ROUTES["/list-jobs"] = list_jobs
+
+
+def retry_job():
+    return {"feature": "retry_job", "n": 38}
+
+ROUTES["/retry-job"] = retry_job
+
+
+def cancel_job():
+    return {"feature": "cancel_job", "n": 39}
+
+ROUTES["/cancel-job"] = cancel_job
+
+
+def list_items_v2():
+    return {"feature": "list_items_v2", "n": 40}
+
+ROUTES["/list-items-v2"] = list_items_v2
+
+
+def get_item_v2():
+    return {"feature": "get_item_v2", "n": 41}
+
+ROUTES["/get-item-v2"] = get_item_v2
+
+
+def create_item_v2():
+    return {"feature": "create_item_v2", "n": 42}
+
+ROUTES["/create-item-v2"] = create_item_v2
+
+
+def update_item_v2():
+    return {"feature": "update_item_v2", "n": 43}
+
+ROUTES["/update-item-v2"] = update_item_v2
+
+
+def delete_item_v2():
+    return {"feature": "delete_item_v2", "n": 44}
+
+ROUTES["/delete-item-v2"] = delete_item_v2

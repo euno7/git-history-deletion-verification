@@ -88,3 +88,138 @@ def test_stats_daily():
 def test_stats_weekly():
     from app import handlers
     assert handlers.stats_weekly()["feature"] == "stats_weekly"
+
+
+def test_audit_log():
+    from app import handlers
+    assert handlers.audit_log()["feature"] == "audit_log"
+
+
+def test_feature_flags():
+    from app import handlers
+    assert handlers.feature_flags()["feature"] == "feature_flags"
+
+
+def test_list_projects():
+    from app import handlers
+    assert handlers.list_projects()["feature"] == "list_projects"
+
+
+def test_get_project():
+    from app import handlers
+    assert handlers.get_project()["feature"] == "get_project"
+
+
+def test_archive_project():
+    from app import handlers
+    assert handlers.archive_project()["feature"] == "archive_project"
+
+
+def test_list_comments():
+    from app import handlers
+    assert handlers.list_comments()["feature"] == "list_comments"
+
+
+def test_add_comment():
+    from app import handlers
+    assert handlers.add_comment()["feature"] == "add_comment"
+
+
+def test_notify_users():
+    from app import handlers
+    assert handlers.notify_users()["feature"] == "notify_users"
+
+
+def test_list_webhooks():
+    from app import handlers
+    assert handlers.list_webhooks()["feature"] == "list_webhooks"
+
+
+def test_rotate_tokens():
+    from app import handlers
+    assert handlers.rotate_tokens()["feature"] == "rotate_tokens"
+
+
+def test_list_sessions():
+    from app import handlers
+    assert handlers.list_sessions()["feature"] == "list_sessions"
+
+
+def test_end_session():
+    from app import handlers
+    assert handlers.end_session()["feature"] == "end_session"
+
+
+def test_list_regions():
+    from app import handlers
+    assert handlers.list_regions()["feature"] == "list_regions"
+
+
+def test_get_region():
+    from app import handlers
+    assert handlers.get_region()["feature"] == "get_region"
+
+
+def test_quota_usage():
+    from app import handlers
+    assert handlers.quota_usage()["feature"] == "quota_usage"
+
+
+def test_billing_preview():
+    from app import handlers
+    assert handlers.billing_preview()["feature"] == "billing_preview"
+
+
+def test_list_reports():
+    from app import handlers
+    assert handlers.list_reports()["feature"] == "list_reports"
+
+
+def test_get_report():
+    from app import handlers
+    assert handlers.get_report()["feature"] == "get_report"
+
+
+def test_schedule_report():
+    from app import handlers
+    assert handlers.schedule_report()["feature"] == "schedule_report"
+
+
+def test_list_jobs():
+    from app import handlers
+    assert handlers.list_jobs()["feature"] == "list_jobs"
+
+
+def test_retry_job():
+    from app import handlers
+    assert handlers.retry_job()["feature"] == "retry_job"
+
+
+def test_cancel_job():
+    from app import handlers
+    assert handlers.cancel_job()["feature"] == "cancel_job"
+
+
+def test_list_items_v2():
+    from app import handlers
+    assert handlers.list_items_v2()["feature"] == "list_items_v2"
+
+
+def test_get_item_v2():
+    from app import handlers
+    assert handlers.get_item_v2()["feature"] == "get_item_v2"
+
+
+def test_create_item_v2():
+    from app import handlers
+    assert handlers.create_item_v2()["feature"] == "create_item_v2"
+
+
+def test_update_item_v2():
+    from app import handlers
+    assert handlers.update_item_v2()["feature"] == "update_item_v2"
+
+
+def test_delete_item_v2():
+    from app import handlers
+    assert handlers.delete_item_v2()["feature"] == "delete_item_v2"
