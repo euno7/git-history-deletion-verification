@@ -228,3 +228,8 @@ def test_delete_item_v2():
 def test_list_users_v2():
     from app import handlers
     assert handlers.list_users_v2()["feature"] == "list_users_v2"
+
+
+def test_get_user_v2():
+    from app import handlers
+    assert handlers.get_user_v2()["feature"] == "get_user_v2"
