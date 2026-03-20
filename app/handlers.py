@@ -300,3 +300,9 @@ def import_csv_v2():
     return {"feature": "import_csv_v2", "n": 49}
 
 ROUTES["/import-csv-v2"] = import_csv_v2
+
+
+def list_orders_v2():
+    return {"feature": "list_orders_v2", "n": 50}
+
+ROUTES["/list-orders-v2"] = list_orders_v2
