@@ -294,3 +294,9 @@ def export_csv_v2():
     return {"feature": "export_csv_v2", "n": 48}
 
 ROUTES["/export-csv-v2"] = export_csv_v2
+
+
+def import_csv_v2():
+    return {"feature": "import_csv_v2", "n": 49}
+
+ROUTES["/import-csv-v2"] = import_csv_v2

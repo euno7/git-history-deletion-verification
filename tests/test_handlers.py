@@ -243,3 +243,8 @@ def test_search_items_v2():
 def test_export_csv_v2():
     from app import handlers
     assert handlers.export_csv_v2()["feature"] == "export_csv_v2"
+
+
+def test_import_csv_v2():
+    from app import handlers
+    assert handlers.import_csv_v2()["feature"] == "import_csv_v2"
