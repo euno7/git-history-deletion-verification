@@ -288,3 +288,9 @@ def search_items_v2():
     return {"feature": "search_items_v2", "n": 47}
 
 ROUTES["/search-items-v2"] = search_items_v2
+
+
+def export_csv_v2():
+    return {"feature": "export_csv_v2", "n": 48}
+
+ROUTES["/export-csv-v2"] = export_csv_v2

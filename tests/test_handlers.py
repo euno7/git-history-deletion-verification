@@ -238,3 +238,8 @@ def test_get_user_v2():
 def test_search_items_v2():
     from app import handlers
     assert handlers.search_items_v2()["feature"] == "search_items_v2"
+
+
+def test_export_csv_v2():
+    from app import handlers
+    assert handlers.export_csv_v2()["feature"] == "export_csv_v2"
