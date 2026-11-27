@@ -17,7 +17,7 @@ keywords = ["fakekey-"]
 [[rules]]
 id = "fake-key-block"
 description = "Fake key file block"
-regex = '''-----BEGIN FAKE DUMMY KEY-----[\s\S]{16,}?-----END FAKE DUMMY KEY-----'''
+regex = '''-----BEGIN FAKE DUMMY KEY-----[A-Za-z0-9+/=\r\n]{16,}?-----END FAKE DUMMY KEY-----'''
 keywords = ["begin fake dummy key"]
 
 [[rules]]
