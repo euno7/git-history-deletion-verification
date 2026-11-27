@@ -1,0 +1,14 @@
+name: print-config
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Print config (writes a dummy value into the job log on purpose)
+        run: grep -h CLOUD_ACCESS_KEY config/settings.py

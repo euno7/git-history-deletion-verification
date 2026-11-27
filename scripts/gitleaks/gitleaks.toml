@@ -1,0 +1,44 @@
+# gitleaks rules for the made-up secret formats used in this sandbox.
+# None of these formats belong to a real service.
+title = "sandbox fake secret rules"
+
+[[rules]]
+id = "fake-cloud-key"
+description = "Fake cloud access key: FAKESECRET_ + 32 alphanumerics"
+regex = '''FAKESECRET_[A-Za-z0-9]{32}'''
+keywords = ["fakesecret_"]
+
+[[rules]]
+id = "fake-webhook-token"
+description = "Fake chat webhook token: fakekey- + 64 hex digits"
+regex = '''fakekey-[0-9a-f]{64}'''
+keywords = ["fakekey-"]
+
+[[rules]]
+id = "fake-key-block"
+description = "Fake key file block"
+regex = '''-----BEGIN FAKE DUMMY KEY-----[\s\S]{16,}?-----END FAKE DUMMY KEY-----'''
+keywords = ["begin fake dummy key"]
+
+[[rules]]
+id = "fake-db-password"
+description = "Fake database password: FAKEPW- + 20 chars incl. + / = @ !"
+regex = '''FAKEPW-[A-Za-z0-9+/=@!]{20}'''
+keywords = ["fakepw-"]
+
+[[rules]]
+id = "client-secret-assignment"
+description = "Prefix-less 40-char secret assigned to a client_secret key"
+regex = '''(?i)"?client_secret"?\s*[:=]\s*"?([A-Za-z0-9]{40})'''
+secretGroup = 1
+keywords = ["client_secret"]
+
+[[rules]]
+id = "admin-password-literal"
+description = "Hard-coded admin password literal"
+regex = '''(?i)admin_password\s*=\s*"([^"]{1,64})"'''
+secretGroup = 1
+keywords = ["admin_password"]
+# the placeholder written by the purge is not a secret
+[[rules.allowlists]]
+regexes = ['''^REMOVED_SECRET$''']

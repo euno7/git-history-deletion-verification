@@ -39,3 +39,6 @@ description = "Hard-coded admin password literal"
 regex = '''(?i)admin_password\s*=\s*"([^"]{1,64})"'''
 secretGroup = 1
 keywords = ["admin_password"]
+# the placeholder written by the purge is not a secret
+[[rules.allowlists]]
+regexes = ['''^REMOVED_SECRET$''']

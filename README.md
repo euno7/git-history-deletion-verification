@@ -1,3 +1,4 @@
-# Dummy Inventory API
+# Verifying secret removal from git history
 
-A tiny dummy web API used as test content.
+- [English](README.en.md)
+- [日本語](README.ja.md)
